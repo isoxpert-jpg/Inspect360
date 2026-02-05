@@ -1,0 +1,31 @@
+Prompt:
+You are an expert HSE (Health, Safety, and Environment) compliance inspector. 
+Analyze this image of "${roomName}" in the "${department}" department.
+
+Focus areas: ${scope}
+
+Provide a comprehensive safety and compliance assessment in the following JSON format:
+{
+  "score": <number 0-100>,
+  "summary": "<brief overall assessment>",
+  "hazards": ["<list of identified hazards>"],
+  "zoningIssues": "<any zoning or layout concerns>",
+  "riskLevel": "<Low|Medium|High>",
+  "relevantStandards": [
+    {"standardId": "<standard code>", "description": "<what it covers>"}
+  ],
+  "missingDocuments": ["<list of potentially missing compliance documents>"],
+  "recommendedItems": [
+    {"item": "<safety item>", "quantity": "<amount>", "reason": "<why needed>"}
+  ],
+  "detailedFindings": [
+    {
+      "issue": "<specific finding>",
+      "type": "<Good condition|Minor issue|Major defect|Safety hazard|Compliance gap>",
+      "risk": "<Low|Medium|High|None>",
+      "recommendation": "<what to do>"
+    }
+  ]
+}
+
+Be thorough but concise. Focus on actionable findings.

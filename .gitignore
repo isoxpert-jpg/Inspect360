@@ -1,19 +1,24 @@
 # Dependencies
-node_modules/
+node_modules
 .pnp
 .pnp.js
 
 # Build outputs
-dist/
-dist-ssr/
+dist
+dist-ssr
 *.local
 
-# Environment
+# Environment files
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
 
 # Logs
 npm-debug.log*
@@ -26,21 +31,7 @@ pnpm-debug.log*
 Thumbs.db
 
 # Testing
-coverage/
+coverage
 
 # Vercel
-.vercel/
-
-# Editor
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Project specific
-antigravity_source/
-version-17/
-project/
+.vercel
